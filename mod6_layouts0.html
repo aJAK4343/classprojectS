@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <style>
+        /* You can add CSS styles here */
+    
+        header h1 span:first-child {
+    background-color: yellowgreen;
+    flex-grow: 2;
+}
+header h1 span:nth-child(2) {
+background-color: blueviolet;
+color:#EEE;
+
+}
+nav.main_menu{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center; /*centers all of flexbox children*/
+gap: 40px
+margin: 80px; auto
+width: clamp (340px, 80%, 700px)
+
+}
+
+nav.main_menu a {
+    background-color: hsl(180, 80%,75% /1);
+    flex-grow: 0;
+    flex-basis: 28%; /*like width*/
+    aspect-ratio: 1; /*makes these into square shaped blocks*/
+
+}
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1> <span> mod</span></h1>
+   
+    
+</header>
+
+<nav>
+    <nav class="main_menu">
+    <a href="#">mod6_layouts1>Layout1</a>
+    <a href="#">mod6_layouts2>Layout2</a>
+    <a href="#">mod6_layouts3>Layout3</a>
+    <a href="#">mod6_layouts4>Layout4</a>
+    <a href="#">mod6_layouts5>Layout5</a>
+    <a href="#">mod6_layouts6>Layout6</a>
+    <a href="#">mod6_layouts7>Layout7</a>
+     
+
+
+</nav>
+
+<main>
+    <h2>Main Content Area</h2>
+    <p>This is where your main content goes.</p>
+</main>
+
+<footer>
+    <p>&copy; 2024 My Webpage. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

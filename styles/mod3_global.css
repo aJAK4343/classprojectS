@@ -1,0 +1,85 @@
+/* reset rule */
+* {
+
+    margin: 5px; padding: 5; border: 5;
+    box-sizing: border-box;
+    padding: 20px;
+    
+    /*box-sizing: border-box;*/
+
+}
+
+body {
+
+     background-color: hsl(359,30%,30%);  
+     color: #EEE;  
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body { background-color: cccc99
+
+
+}
+
+
+
+
+
+ol {
+    margin: 5px 5px 5px;
+
+}
+
+ol li {
+    margin-bottom: 5px;
+    list-style-type: upper-roman;
+
+
+}
+
+header {
+    border: 5px solid #ff3
+    margin: 5px auto; /*center a block*/
+    width: 150px;
+    max-width: 250px;
+    padding: 8px;
+    border-radius: 25%; 
+    aspect-ratio: 1/1; 
+    display: flex;  /*20%*/
+    background-image: linearGradient(180deg,red,orange); /* add and use differnt numbers varitety of codes hsla etc */
+
+}
+
+
+header h1 {
+    align-self: center; /* verticle center */
+    text-align: left;
+    font-weight: normal;
+    font-size: 4em;    /* 1,2,3 em bigger and %*/
+    text-transform: lowercase;
+}
+
+header h1 span {
+    color: hsl(359,30%,55%)
+
+}
+
+/* psuedo class selector*/
+header:nth-of-type(2) {
+    display: none;
+}
+
+/* id selector */
+#hero {
+    background-image: url(../Images/Mountain.jpg);
+    aspect-ratio: 2/1;
+    background-size:cover;
+    background-position: 25% 25%;
+    position: relative;
+}
+#hero p {
+    background-color: rgba( 240, 240, 240,.7);
+    position: absolute; top: 60%; left: 0;
+    width: 50%;
+    padding: 15px 8px;
+}

@@ -1,0 +1,76 @@
+* {
+    margin: 0; padding: 0; border: 0; box-sizing: border-box;
+
+}
+
+body {
+    background-color: hsl(200, 38%, 15%);
+    color: rgb(252, 252, 22);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 8px;
+    padding-bottom: 600px;
+}
+
+h1,h2 {
+    color: limegreen;
+    letter-spacing: .3em;
+
+
+}
+
+h1 {
+    border-bottom: 1px solid #EEE;
+    margin-bottom: 40px;
+}
+
+h2  {
+    margin-bottom: 8px;
+}
+
+article {
+    margin: 16px auto;
+    width: 30px;
+    border: 2px solid #222;
+    padding: 16px;
+}
+
+label {
+    font-size:  1.5em;
+    font-weight: bold;
+    color: #EEE;
+}
+
+button, input[type=button], input[type=submit], input[type=reset]
+select {
+    font-size: 1.5em;
+    padding: 8px 12px;
+    background-color: #FFA;
+    color: #222;
+
+}
+
+button:hover, 
+input[type=button]:hover,
+input[type=submit]:hover,
+input[type=reset]:hover {
+  cursor: pointer;
+
+}
+
+input[type=text],
+input[type=password],
+input[type=tel],
+input[type=email],
+input[type=url]  {
+    font-size: 1.5em;
+    padding: 4px 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+video {
+    width: 60%;
+    aspect-ratio: 16/9;
+}
+input{}

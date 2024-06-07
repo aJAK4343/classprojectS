@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Participation | Layout_9</title>
+   <style>
+   
+   * {
+        margin: 0;
+        padding: 0;
+        bottom: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        min-height: 100vh;
+    }
+
+    .wrapper {
+        min-height: 100vh;
+        background-image: url(images/mountainlandscape.jpg);
+        background-repeat: no-repeat;
+        border: 4px solid red;
+        display: flex;
+        flex-direction: row;
+        background-size: 100%, cover;
+        background-position: center center;
+        /* flex-direction: column;*/
+        position: relative;
+    }
+    #green {
+        background-color: chartreuse;
+        position: top-right;
+        width: 200px;height: 200px;
+    }
+    #yellow {
+        background-color: yellowgreen(rgb(165, 214, 31),);
+        position: absolute; top: 50%; right:  50%;
+        width: 200px; height: 200px;
+    }
+    #purple {
+        background-color: purple;
+        position: absolute; top: 50%px; left 50%;
+        width: 200px; height: 200px;
+
+    }
+    #lightsteelblue {
+        background-color: blueviolet(rgb(102, 10, 187));
+        position: absolute; top: 0px; left 0px;
+        width: 400px; height: 270px;
+        transform:translate( -50%, -50%);
+    }
+
+</style>
+  </head>
+  <body>
+    <div class="wrapper">
+        <div id="yellowgreen"></div>
+        <div id="purple"></div>
+        <div id="green"></div>
+        <div id="lightsteelblue"></div>
+
+
+    </div>
+    <main>
+          
+    </main>
+	
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Participation | mod6_layout8</title>
+
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            bottom: 0;
+            box-sizing: border-box;
+        }
+    
+        body {
+            min-height: 100vh;
+        }
+    
+        .wrapper {
+            min-height: 100vh;
+            border: 4px solid red;
+            display: flex;
+            flex-direction: row;
+            /* flex-direction: column;*/
+        }
+        #leftside {
+            flex-grow: 1; flex-basis: 50%;
+            background-color: aquamarine;
+            background-position: left center;
+            display: flex;
+            flex-direction: row;
+            
+        }
+        #rightside {
+            flex-grow: 1; flex-basis: 50%;
+            background-color: blue;
+            background-position: right center;
+            filter: grayscale(0%);
+            display: flex;
+            flex-direction: column;
+        }
+        #ls_1 {
+            flex-grow: 1;
+            flex-basis: 50%;
+            background-color: blueviolet;
+        }
+
+        #ls_2 {
+            flex-grow: 1;
+            flex-basis: 50%;
+            background-color: lightsteelblue;
+        }
+        #rs_1 {
+            flex-grow: 1;
+            flex-basis: 50%;
+            background-color: lightgreen;
+            max-height: 50vh;
+        }
+        #rs_2 {
+            flex-grow: 1;
+            flex-basis: 50%;
+            background-color: yellowgreen;
+            max-height: 50vh;
+        }
+
+    </style>
+   
+   
+  </head>
+  <body>
+    <div class="wrapper">
+       
+        <div id="leftside"></div>
+        <div id="ls_1"></div>
+        <div id="ls_2"></div>
+        </div>
+       
+        <div id="rightside"></div>
+        <div id="rs_1"></div>
+        <div id="rs_2"></div>
+        </div>
+            
+
+
+    </div>
+    </body>
+
+    <main>
+      
+    </main>
+	<script src="index.js"></script>
+  </body>
+</html>

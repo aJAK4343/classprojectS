@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    
+    <title>Participation | mod6 Layout7</title>
+    <style>   
+   
+        * {
+             margin: 0;
+             padding: 0;
+             bottom: 0;
+             box-sizing: border-box;
+         }
+     
+         body {
+             min-height: 100vh;
+         }
+     
+         .wrapper {
+             min-height: 100vh;
+             border: 4px solid red;
+             display: flex;
+             flex-direction: row;
+             /* flex-direction: column;*/
+         }
+
+         .wrapper > div {
+        flex-grow: 1;
+        flex-basis:  25%;
+    }
+    #block1 {
+        flex: 1 0 22%;
+        
+        background-color: hsl(131, 77%, 45%);
+    }
+
+    #block2> :first-child {
+        flex: 1 0 50%;
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 0;
+        background-color: hsl(299, 84%, 27%);
+        max-height: 50vh;
+    }
+    #block2 > div {
+        flex: 1 0 100%;
+        max-height: 50vh;
+    }
+    #top-block {
+        
+
+    }
+    #block2 > div :first-child {
+        background-color: chartreuse;
+
+    }
+
+    #block3 > div:last-child {
+        background-color: hsl(199, 94%, 25%);
+    }
+   
+    #block3 {
+        flex: 1 0 22%;
+        background-color: greenyellow;
+    }
+   
+    .wrapper {
+    flex-direction: column;
+    }
+
+
+
+
+
+    
+    
+    </head>
+  <body>
+
+    <div class="wrapper">
+
+<div id="block1"></div>
+
+<div id="block2">
+<div></div>
+<div></div>
+</div>
+
+<div id="block3">
+    
+    </div>
+    <main>
+      
+    </main>
+	
+  </body>
+</html>

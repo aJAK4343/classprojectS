@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop-down Menu | XC Participation for Module 8</title>
+    <style>
+
+        * {
+            margin: 0; padding: 0; border: 0; box-sizing: border-box;
+        }  
+
+        body {
+            background-color: rgb(72, 72, 71);
+            font-family: verdana;
+
+        }
+
+          h1 {
+            text-align: center;
+            text-transform: lowercase;
+            color: rgb(149, 147, 144);
+            text-shadow:  0 0 5px #234;
+            margin-bottom: 80px;
+
+          }
+
+          nav { 
+            width: 95%; margin: 10px auto;
+            display: flex;
+            justify-content: center;
+            padding: 40px 0;
+          }
+
+          ul {
+            flex: 0 0 70%;
+            
+          /*  border-width: ;
+            border-style: ;
+            border-color: ; */
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+          }
+
+
+          
+         /* Center the list itself 
+          .centered-list {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; styles on the .centered-list class make the list a flex container
+            oriented as a column, with it's items centered along the cross axis
+            list-style-type: none;  Removes bullet points
+            padding: 0;  makes sure there is no exra space around list*/ 
+
+
+          
+
+          /*Center the text inside each list item 
+            .centered-list li {
+                text-align: center;
+            } */
+
+          
+
+          nav > ul > li {
+             margin: 12px 8px;
+            flex: 0 0 auto;
+            max-width: 200px;
+            list-style: none; /* gets rid of bullets */
+            position: relative;
+            
+          }
+          nav > ul > li > a {
+            
+            display: block;
+            width: 100%; height: 100%; /* hyperlinks fill the li space */
+            background-color: rgb(56, 186, 186);
+            color: #234;
+            text-decoration: none;
+            text-align: center;
+            /*line-height: 60px; */
+            padding: 60px 8px;
+            box-shadow: 1px 2px 3px #234;
+          }
+          ul.submenu {
+            border: 4px orangered;
+            position: absolute; top: 100%; left: -50%;
+            display: none; /* hides the submenu */
+            padding-top: 8px;
+            list-style: none;
+            width: calc(200% + 16px);
+            /*transition: all .7s ease-in-out;*/
+
+
+          }
+          
+          ul.submenu > li {
+            margin: 4px 0;
+          }
+
+          ul.submenu > li > a {
+            display: none;
+            text-align: center;
+            padding:16px 8px;
+            box-shadow: 1px 2px 3px #222;
+            margin-bottom: 12px;
+            background-color: aliceblue; color:rgb(156, 203, 245);
+              
+          }
+
+          nav > ul > li:hover ul.submenu {
+           display: block;
+            /*position: absolute; top: 100%; left: -50%; */
+
+            
+          } 
+
+          nav li:hover > a {
+            background-color: rgb(245, 185, 23);
+          }
+    </style>
+</head>
+<body>
+    
+
+
+   <h1>Drop-Down Menu</h1>
+
+  <nav>
+    
+    <ul>
+        <li><a href="#">lorem ipsum</a>
+            <ul class="submenu">
+                   <li><a href="#">muspi merol</a></li>
+                   <li><a href="#">muspi merol</a></li>
+                   <li><a href="#">muspi merol</a></li>
+                   <li><a href="#">muspi merol</a></li>
+                   <li><a href="#">muspi merol</a></li>
+            </ul>
+ 
+         </li>
+        <li><a href="#">lorem ipsum</a>
+           <ul class="submenu">
+                  <li><a href="#">muspi merol</a>
+                    <ul class="submenu">
+                           <li><a href="#">muspi merol</a></li>
+                           <li><a href="#">muspi merol</a></li>
+                           <li><a href="#">muspi merol</a></li>
+                           <li><a href="#">muspi merol</a></li>
+                           <li><a href="#">muspi merol</a></li>
+                    </ul>
+         
+                 </li>
+                  <li><a href="#">muspi merol</a>
+                    <ul class="submenu">
+                           <li><a href="#">muspi merol</a></li>
+                           <li><a href="#">muspi merol</a></li>
+                           <li><a href="#">muspi merol</a></li>
+                           <li><a href="#">muspi merol</a></li>
+                           <li><a href="#">muspi merol</a></li>
+                    </ul>
+         
+                 </li>
+                  <li><a href="#">muspi merol</a>
+                    <ul class="submenu">
+                           <li><a href="#">muspi merol</a></li>
+                           <li><a href="#">muspi merol</a></li>
+                           <li><a href="#">muspi merol</a></li>
+                           <li><a href="#">muspi merol</a></li>
+                           <li><a href="#">muspi merol</a></li>
+                    </ul>
+         
+                 </li>
+                  <li><a href="#">muspi merol</a>
+                    <ul class="submenu">
+                           <li><a href="#">muspi merol</a></li>
+                           <li><a href="#">muspi merol</a></li>
+                           <li><a href="#">muspi merol</a></li>
+                           <li><a href="#">muspi merol</a></li>
+                           <li><a href="#">muspi merol</a></li>
+                    </ul>
+         
+                 </li>
+                  <li><a href="#">muspi merol</a>
+                    <ul class="submenu">
+                           <li><a href="#">muspi merol</a></li>
+                           <li><a href="#">muspi merol</a></li>
+                           <li><a href="#">muspi merol</a></li>
+                           <li><a href="#">muspi merol</a></li>
+                           <li><a href="#">muspi merol</a></li>
+                    </ul>
+         
+                 </li>
+           </ul>
+
+        </li>
+        <li><a href="#">lorem ipsum</a></li>
+        <li><a href="#">lorem ipsum</a></li>
+        <li><a href="#">lorem ipsum</a></li>
+        <li><a href="#">lorem ipsum</a></li>
+        <li><a href="#">lorem ipsum</a></li>
+    </ul>
+</ul>
+  </nav>
+</div>
+
+</body>
+</html>

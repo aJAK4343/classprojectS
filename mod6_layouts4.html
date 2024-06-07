@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <style>
+        /* You can add CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        #left-block {
+            flex-grow: 1;
+            flex-basis: 50%;
+            background-color: limegreen;
+            position: relative;
+        }
+        #inside-block {
+            width: 80% height:20vh;
+            background-color: blue;
+            margin: 60px auto;
+        }
+        #right-block {
+            flex-grow:1;
+            flex-basis: 1;
+            background-color:hsl(160 80% 55%) ;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+       <div id="left-block"></div>
+       <div id="inside-block"></div>
+       <div id="right-block"></div>
+
+
+    </div>
+
+<header>
+    <h1>Welcome to My Webpage</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+
+<main>
+    <h2>Main Content Area</h2>
+    <p>This is where your main content goes.</p>
+</main>
+
+<footer>
+    <p>&copy; 2024 My Webpage. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

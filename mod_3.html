@@ -1,0 +1,48 @@
+/* CSS reset rule*/
+* { 
+   
+   margin: 0; padding: 0; border: 0;
+   box-sizing: border-box;
+
+}
+
+
+body {
+	background-color: pink;
+	
+	padding: 10px;
+	
+}
+
+h1 { 
+     font-family: verdana;
+	 text-align: center;
+	 margin: 15px;
+	 
+}
+
+nav {
+	border: 4px solid #800;
+	padding: 10px;
+	margin: 20px;
+	text-align: center;
+	
+}
+nav a {
+	text-decoration: none; /*gets rid of underlines*/
+	
+}
+/* psuedo element*/
+ nav a :: after {
+	 content: "|X| ";
+ }	 
+
+nav a::after {
+	  content: "|";
+	  font
+}
+ 
+ nav a: last-child::after {
+	 content: "";
+	 
+ }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <style>
+        /* You can add CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        main {
+            padding: 20px;
+        }
+        #container {
+            height: 100vh;
+            border: 8px solid red;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        #left-block {
+            flex-grow: 1;
+            flex-basis: 50%;
+            background-color: hsl(160 80% 35%);
+        }
+        #right-block {
+            flex-grow: 1;
+            flex-basis: 50%;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <div id="left-block"></div>
+        <div id="right-block"></div>
+    </div>
+
+
+
+
+<main>
+    <h2>Main Content Area</h2>
+    <p>This is where your main content goes.</p>
+</main>
+
+<footer>
+    <p>&copy; 2024 My Webpage. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

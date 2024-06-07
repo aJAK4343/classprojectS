@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <title>using css grid for responsive layout_mod7_responsive_pages</title>
+    <link rel="stylesheet" href="styles/mod7_responsive.css"> <!-- Link to an external CSS file -->
+     <meta name="viewport"
+     content="width=device-width, initial-scale=1"/>
+     <h1>Responsive Webpage Layouts</h1>
+     <h2>This layout uses CSS grid</h2>
+     <!-- pages need this for scaling and viewing on phones and small devices--> 
+
+
+<style>
+    *{
+        margin: 0; padding: 0; border: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: verdana;
+        padding: 8px;
+        background-color: #EEE;
+    }
+    header {
+        margin: 8px;
+        margin-bottom: 40px;
+        background-color: tan;
+        padding: 8px;
+        border-left:12px solidcolor ;
+
+
+
+    }
+
+    header p {
+        font-style: italic;
+        margin-top: 12px;
+        }
+
+    .container {
+        border: 2px solid red;
+        margin: 10px;
+        padding: 10px;
+        display: grid; /*display: flex or grid containers*/
+        gap: 1em;
+        grid-template-columns: /*1fr 1fr 1fr 1fr*/; 
+        repeat(auto-fit, minmax(min(300px,100%)1fr));
+        
+        /* repeat "function" (4,1fr) */
+        /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
+
+    }
+
+    /*!--watch grid video--*/
+    .container > div {
+        border: 2px solid blue;
+        padding: 8px;
+
+    }
+
+    /*youtube Kevin Powell, rubber duck debugging*/
+
+</style>
+
+
+
+</head>
+<body>
+    <header>
+        <h1>Responsive Webpage Layouts</h1>
+        <P>This layout uses CSS grid</p>
+        
+        <nav>
+            <ul>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+          <div>lorem ipsum</div>
+          <div>lorem ipsum</div>
+          <div>lorem ipsum</div>
+          <div>lorem ipsum</div>
+          <div>lorem ipsum</div>
+          <div>lorem ipsum</div>
+          <div>lorem ipsum</div>
+          <div>lorem ipsum</div>
+          <div>lorem ipsum</div>
+          <div>lorem ipsum</div>
+          <div>lorem ipsum</div>
+    </div>
+    <main>
+      
+        
+      
+        
+       
+        
+        
+    </main>
+    
+    <footer>
+        
+    </footer>
+</body>
+</html>

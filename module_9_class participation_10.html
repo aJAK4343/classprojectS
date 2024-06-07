@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>module_9_class_participation_10</title>
+
+    <link rel="stylesheet" href="module_9_class participation_10.css">
+  
+  </head>
+  <body>
+    <h1>form elements (and video)</h1>
+    <article>
+        <h2>color picker</h2>
+        <form action="" method="post" enctype="">
+            <label for="colorPicker">Choose Your Color:</label>
+            <input type="color" id="colorPicker" name="colorPicker">
+            <input type="button" id="colorButton" value="Apply The Color!">
+        </form>
+
+        <!--javascript below-->
+
+        <script>
+            //declair some varibles
+            const colorPicker = document.getElementbyId('colorPicker');
+           
+            
+
+            //create a function that will change the page color
+            function applyColor() {
+                document.body.style.backgroundColor = colorPicker.value;
+
+
+            }
+
+            //create an event listener
+            document.getElementById('colorPicker').addEventListener('click', applyColor);
+
+        </script>
+    </article>
+    <article>
+        <h2>text box (and friends)</h2>
+        <form action="" method="post" enctype="">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" placeholder="Enter First Name">
+           <br><br>
+
+           <label for="pwd"> Password:</label>
+           <input type="password" id="pwd" placeholder="enter password">
+           <br><br>
+
+           <label for="telphone"> Phone No:</label>
+           <input type="tel" id="telphone" placeholder="enter phone number">
+           <br><br>
+        </form>
+    </article>
+
+    <article style="text-align: center;">
+        <h2 style="text-align: left;">embeded video</h2>
+        
+        <video src="images/motorace.mp4" poster="images/motorx.jpg"  
+        autoplay controls >
+    
+        </video>
+
+    </article>
+
+    <article>
+        <h2>select menu</h2>
+         <form>
+            <label for="state">choose state</label>
+            <select id="state">
+                <option id="null" value="null">select</option>
+                <option id="Nev" value="Nev">Nevada</option>
+                <option id="Ca" value="Ca">California</option>
+                <option id="con" value="con">confusion</option>
+                <option id="Wa" value="Wa">Washington</option>
+            </select>
+         </form>
+        <fieldset>
+            <input type="checkbox" id="cb1"><label for="cb1">checkbox 1</label>
+            <input type="checkbox" id="cb2"><label for="cb2">checkbox 2</label>
+            <input type="checkbox" id="cb3"><label for="cb3">checkbox 3</label>
+        </fieldset>
+        <fieldset>
+            <input type="Radio" id="rd1"><label for="rd1">checkbox 1</label>
+            <input type="Radio" id="rd2"><label for="rd2">checkbox 2</label>
+            <input type="Radio" id="rd3"><label for="rd3">checkbox 3</label>
+        </fieldset>
+    </article>
+    <main>
+       
+    </main>
+	
+  </body>
+</html>

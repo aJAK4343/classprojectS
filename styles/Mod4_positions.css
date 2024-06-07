@@ -1,0 +1,110 @@
+/* reset rule always*/
+*{
+    margin: 0; padding: 0; border: 0;
+    box-sizing:border-box;
+
+}
+/*varibles*/
+
+:root {
+    
+    --background-color #0fc;
+    --text-color; #232;
+    --header-background; #EEE;
+
+}
+
+body {
+
+    background-color: #CFC;
+    color: #232;
+    font-family: verdana;
+    /* border 4px solid red */
+    min-height: 120svh; /* 100% of the small viewport hieght look up vh vs. svh*/
+
+}
+
+header {
+    
+    position: fixed;
+    top: 0; left:0;
+    width: 100%; /* needed for position fixed, absolute*/
+    height: 80px;
+    background-color: #eee;
+    color: #232;
+    
+}
+
+
+a.logo {
+    
+    
+    width: 200px; height: 80px;
+    display: block; /*convert to block element*/
+    background-color: #eee;
+    position:absolute; top: 0; left: 50%;
+    transform: translateX(-50%) /* 50% of logo width; translate look up X Y?*/
+    padding-top; 16px;
+    /*border-top 16px*/
+
+
+}
+
+a.menu_icon {
+    
+    width: 50px; height: 50px;
+    display: block;
+    /*border: 2px solid red;*/
+    position: relative;
+    top; 15px left: 15px;
+
+}
+
+
+ a.menu_icon img {
+       
+    width: 100%; height:  100%;
+
+
+ }
+
+ .featured_photo {
+
+    border: 4px solid orange;
+    margin: 200px auto 80px auto;
+    width 700px; height 400px;
+    position:relative;
+ }
+
+ .featured_photo figcaption {
+
+    width: 250px; height: 250px;
+    background-color: darkred;
+    color: var(--background-color);
+    position: absolute; top: 0; left0;
+    
+ }
+
+ .picture_frame {
+
+    border: 2px solid yellowgreen;
+    width: 400px; height: 300px;
+    position: absolute;
+    right: 0; top: 0;
+    background-image: url(../Images/Mountain.jpg);
+    background-size: cover;
+    background-position: center;
+    display: block;
+ }
+ 
+ .featured_photo figcaption::after {
+
+    content: "";
+    display: block;
+    width: 40px; height: 40px;
+    background-color:blue;
+    position absolute: top 50%; right: -20px;
+    z-index: 5; /*controls layering, big number on top*/
+    transform: translateY(-50%deg) rotate(45deg);
+
+ }
